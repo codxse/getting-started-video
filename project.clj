@@ -4,18 +4,19 @@
   :license {:name "MIT"
             :url  "https://opensource.org/licenses/MIT"}
 
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.8.51"]
+  :dependencies [[org.clojure/clojure "1.9.0-alpha14"]
+                 [org.clojure/clojurescript "1.9.456"]
                  [org.omcljs/om "1.0.0-alpha37"]
-                 [navis/untangled-client "0.5.3" :exclusions [cljsjs/react org.omcljs/om]]
-                 [navis/untangled-server "0.5.1"]
-                 [navis/untangled-spec "0.3.7-1"]
-                 [com.taoensso/timbre "4.3.1"]
+                 [navis/untangled-client "0.6.1" :exclusions [cljsjs/react org.omcljs/om]]
+                 [navis/untangled-server "0.6.2"]
+                 [navis/untangled-spec "0.3.9"]
+                 [com.taoensso/timbre "4.8.0"]
                  [commons-codec "1.10"]
-                 [binaryage/devtools "0.5.2" :scope "test"]
-                 [figwheel-sidecar "0.5.3-1" :exclusions [ring/ring-core joda-time org.clojure/tools.reader com.stuartsierra/component]]]
+                 [binaryage/devtools "0.9.0" :scope "test"]
+                 [figwheel-sidecar "0.5.9" :exclusions [ring/ring-core joda-time org.clojure/tools.reader com.stuartsierra/component]]]
 
-  :plugins [[lein-cljsbuild "1.1.3"]]
+  :plugins [[lein-cljsbuild "1.1.5"]
+            [lein-ancient "0.6.10"]]
 
   :source-paths ["dev/server" "src/server"]
   :test-paths ["test/client"]
